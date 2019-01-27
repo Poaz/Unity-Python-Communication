@@ -10,6 +10,7 @@ using UnityEngine;
 
 public class HelloRequester : RunAbleThread
 {
+    public byte[] bytes;
     ///     Stop requesting when Running=false.
     protected override void Run()
     {
@@ -24,7 +25,7 @@ public class HelloRequester : RunAbleThread
                 if (Send)
                 {
                     //string message = client.ReceiveFrameString();
-                    client.SendFrame("Hello");
+                    client.SendFrame(bytes);
 
                     string message = null;
                     bool gotMessage = false;

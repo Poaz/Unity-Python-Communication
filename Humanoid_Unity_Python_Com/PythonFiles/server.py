@@ -3,11 +3,8 @@
 #   Binds REP socket to tcp://*:5555
 #   Expects b"Hello" from client, replies with b"World"
 #
-
 import time
 import zmq
-
-from datetime import datetime
 
 
 context = zmq.Context()
@@ -15,7 +12,7 @@ socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")
 
 messages = []
-t1 = start_time = datetime.now()
+
 while True:
 
     #  Wait for next request from client

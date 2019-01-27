@@ -7,15 +7,12 @@
 import time
 import zmq
 
-from datetime import datetime
-
-
 context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")
 
 messages = []
-t1 = start_time = datetime.now()
+
 while True:
 
     #  Wait for next request from client
