@@ -1,6 +1,7 @@
 ﻿using AsyncIO;
 using NetMQ;
 using NetMQ.Sockets;
+using System;
 using UnityEngine;
 
 
@@ -26,7 +27,6 @@ public class HelloRequester : RunAbleThread
                 {
                     //string message = client.ReceiveFrameString();
                     client.SendFrame(bytes);
-
                     string message = null;
                     bool gotMessage = false;
 

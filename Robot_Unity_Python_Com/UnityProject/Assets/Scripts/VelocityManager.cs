@@ -25,7 +25,7 @@ public class VelocityManager : MonoBehaviour
     public Rigidbody rigid;
     public WheelCollider leftWheel, rightWheel, frontWheel, backWheel;
 
-    private float targetVelocityMagnitude = 0.5f;
+    //private float targetVelocityMagnitude = 0.5f;
 
     private void Start()
     {

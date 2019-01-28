@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 5559209014373519799, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5559209014373519799, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
         type: 3}
@@ -177,6 +177,36 @@ PrefabInstance:
     - target: {fileID: 5559209014373519799, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617342676955187123, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617342676955187123, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617342676955187123, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5521475159196681999, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: rigid
+      value: 
+      objectReference: {fileID: 375471590}
+    - target: {fileID: 5521475159196681999, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: doUpdate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5706476833135108533, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -319,6 +349,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459e5c6e28112ee49aca00a47c4f4e23, type: 3}
+--- !u!54 &375471590 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 5617342676955187123, guid: e09cb2c4f1bf15949bb6dc8083ad616a,
+    type: 3}
+  m_PrefabInstance: {fileID: 150214391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SendPack: 1
-  current_img: 
 --- !u!1 &1984436570
 GameObject:
   m_ObjectHideFlags: 0

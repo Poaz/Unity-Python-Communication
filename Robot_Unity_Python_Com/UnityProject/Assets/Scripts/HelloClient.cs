@@ -10,7 +10,7 @@ public class HelloClient : MonoBehaviour
 {
     private HelloRequester _helloRequester;
     public bool SendPack = true;
-    public byte[] current_img;
+    private byte[] current_img;
 
     private void OnPostRender()
     {
@@ -27,8 +27,8 @@ public class HelloClient : MonoBehaviour
             //Destroy the tex for mem leak control
             Object.Destroy(texture);
 
-            // For testing purposes, also write to a file in the project folder
-            File.WriteAllBytes(Application.dataPath + "SavedScreen.png", current_img);
+            // For testing purposes, also write to a file in the project folder, if you want to save the image directly from Unity, use this.
+            //File.WriteAllBytes(Application.dataPath + "SavedScreen.png", current_img);
 
             _helloRequester.bytes = current_img;
             _helloRequester.Continue();
