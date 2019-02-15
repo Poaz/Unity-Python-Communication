@@ -7,4 +7,8 @@ There is three different projects located in this repository.
 3. A Unity scene with a humanoid rig and Unity-Python communication.
 
 
-The Python code is made with Python 3.6 and needs one library called zmq, which you can use pip to install.  
+The Python code is made with Python 3.6 and needs one library called zmq, which you can use pip to install (pip install zmq).
+
+The communication for each project is using the same base, which is 3 C# scripts to make an independent runable thread to handle communication in Unity, and 1 script in python as a server. 
+
+
